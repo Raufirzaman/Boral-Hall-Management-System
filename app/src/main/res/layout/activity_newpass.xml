@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpay"
+    android:backgroundTint="#00A63232"
+    android:backgroundTintMode="add"
+    android:padding="20dp">
+
+    <!-- Logo at the top, outside any other layout -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="155dp"
+        android:layout_height="167dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <!-- Main container with LinearLayout for forms, below the logo -->
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Forgot Password Title -->
+        <TextView
+            android:id="@+id/forgot_password_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Email Section (Initially visible) -->
+        <LinearLayout
+            android:id="@+id/email_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfileb"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <!-- Email Input Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Enter Your Email:"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <!-- Email Input Field -->
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textfile"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dp" />
+
+            <!-- Submit Email Button -->
+            <Button
+                android:id="@+id/emailsubmitf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textfile2"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Enter Code Section (Initially hidden) -->
+
+        <!-- Password Section (Initially hidden) -->
+        <LinearLayout
+            android:id="@+id/password_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfileb"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="A mail has been sent to your email ,follow the step to reset password."
+                android:textAlignment="center"
+                android:textColor="@color/ic_launcher_background"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- New Password Input Field -->
+
+            <!-- Confirm Password Input Field -->
+
+            <!-- Submit Password Button -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpay"
+    android:padding="16dp"
+    tools:context=".search">
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/hgradient"
+        android:text="Student Information"
+        android:textAlignment="center"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <!-- Search Bar -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/textfile"
+        android:hint="Search by student ID"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search by student name or ID"
+        app:defaultQueryHint="Search by student ID" />
+
+    <!-- Search Results Section -->
+    <LinearLayout
+        android:id="@+id/search_results_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_student"
+        android:background="@drawable/textfileb"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <!-- Displayed when no result is found -->
+
+        <!-- Student Information List -->
+        <LinearLayout
+            android:id="@+id/student_info_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfile"
+            android:orientation="vertical">
+            <!-- Placeholder for student info cards -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_results_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No students found"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

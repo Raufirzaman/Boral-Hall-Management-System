@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="prim">#009644</color>
+    <color name="scon">#F44336</color>
+    <color name="switch_thumb_enabled">#33CC33</color> <!-- Green for enabled -->
+    <color name="switch_thumb_disabled">#AAAAAA</color> <!-- Gray for disabled -->
+    <color name="switch_track_enabled">#FF0000</color> <!-- Red for enabled -->
+    <color name="switch_track_disabled">#555555</color> <!-- Darker gray for disabled -->
+</resources>
