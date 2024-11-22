@@ -82,9 +82,9 @@ The Boral Hall Management System is designed to simplify hall operations, making
 
 <h2>From,</h2>
 <h3>
-Raufir Zaman Choudhury
-Md. Mueid Shahriar
-Syed Sharzil Ahmmed
+Raufir Zaman Choudhury,
+Md. Mueid Shahriar,
+Syed Sharzil Ahmmed &
 Riyad Ahmed Bin Akkas
 </h3>
 
